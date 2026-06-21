@@ -126,7 +126,6 @@ def build():
     with open(VAULT_PATH, "wb") as f:
         f.write(enc)
 
-    # self-verify
     back = decrypt(enc, password)
     assert back == plaintext, "round-trip verification failed!"
     os.chmod(VAULT_PATH, 0o600)
@@ -155,4 +154,9 @@ def check():
     sys.exit(1)
 
 
-if __name__ == "__m
+if __name__ == "__main__":
+    cmd = sys.argv[1] if len(sys.argv) > 1 else "build"
+    actions = {"build": build, "view": view, "check": check}
+    if cmd not in actions:
+        sys.exit(f"unknown cmd: {cmd}")
+    actions[cmd]()
