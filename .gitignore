@@ -1,0 +1,23 @@
+# ── Local-only secrets — NEVER commit ──────────────────────────────
+secrets.env
+secrets.env.*
+.vault_pass
+*.vault_pass
+.env
+*.pem
+*.key
+
+# Ansible
+*.retry
+
+# Node / Wrangler
+node_modules/
+.wrangler/
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Stray files left by the build sandbox (safe to delete)
+tmpchec
