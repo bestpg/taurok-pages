@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Minecraft-Server (Better MC BMC5): Projekt von Mario Taurok.">
+  <title>Minecraft-Server (Better MC BMC5) · Mario Taurok</title>
+  <link rel="stylesheet" href="../style.css?v=4">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="../index.html#start">Mario<span>.</span>Taurok</a>
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a href="../index.html#projekte">Projekte</a>
+        <a href="../index.html#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="proj-hero">
+      <div class="container">
+        <a class="backlink" href="../index.html#projekte">&larr; Zurück zum Portfolio</a>
+        <p class="kicker">Privat &middot; Projekt</p>
+        <h1 class="proj-title">Minecraft-Server (Better MC BMC5)</h1>
+        <p class="proj-lead">Eigener Ubuntu-Root-Server (oracle) mit systemd-Dienst und automatischem Backup-Skript.</p>
+        <ul class="tags">
+          <li>Linux</li>
+          <li>systemd</li>
+          <li>Backup-Skript</li>
+          <li>GitHub</li>
+        </ul>
+        <div class="proj-actions">
+          <a class="btn btn--primary" href="https://github.com/bestpg/Better-MC-Server" target="_blank"
+            rel="noopener"><svg viewBox="0 0 24 24" class="ico ico--fill" aria-hidden="true">
+              <path
+                d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z" />
+            </svg>Auf GitHub ansehen</a>
+          <a class="btn btn--ghost" href="../index.html#projekte">Andere Projekte</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <figure class="proj-figure"><img src="../img/minecraft.webp" alt="Minecraft-Server (Better MC BMC5)"
+            loading="lazy"></figure>
+
+        <div class="prose">
+          <h2>Über das Projekt</h2>
+          <p>Ein vollständig selbst gehosteter Minecraft-Server für eine Gruppe von Freunden, aufgesetzt von Grund auf,
+            ohne fertiges Hosting-Panel. Ziel war es, einen modifizierten Server (Better MC BMC5 auf NeoForge 1.21.1)
+            stabil und kostenlos zu betreiben und dabei die gesamte Infrastruktur selbst zu verstehen und zu
+            kontrollieren.</p>
+          <p>Als Basis dient eine Always-Free-Instanz von Oracle Cloud auf ARM-Architektur (Ampere A1.Flex, aarch64)
+            unter Ubuntu. Die ARM-Plattform brachte eigene Herausforderungen mit sich, von der Auswahl kompatibler Mods
+            bis zur Performance-Optimierung auf nur zwei CPU-Kernen. Der Server läuft als <code>systemd</code>-Dienst,
+            startet also nach jedem Reboot automatisch und erholt sich selbstständig von Abstürzen. Ein zeitgesteuertes
+            Backup-Skript sichert die Welt täglich über einen Cron-Job in den Oracle Object Storage, unabhängig von der
+            Instanz selbst, sodass die Weltdaten auch bei einem Instanzverlust erhalten bleiben.</p>
+          <p>Vom Provisionieren der Infrastruktur über Firewall- und DNS-Konfiguration, Crash-Debugging anhand von
+            Server-Logs bis hin zur Versionierung der Konfiguration mit Git wurde die komplette Pipeline eigenständig
+            umgesetzt.</p>
+          <h2>Highlights</h2>
+          <ul>
+            <li>Kostenfreier Betrieb auf der Always-Free-Stufe von Oracle Cloud (ARM/aarch64, Ubuntu)</li>
+            <li>Automatischer Start über einen <code>systemd</code>-Dienst mit Neustart bei Absturz und nach Reboots</li>
+            <li>Tägliche Backups per Cron-Job in den Oracle Object Storage, getrennt vom Boot-Volume und unabhängig von
+              der Instanz</li>
+            <li>Dynamisches DNS via DuckDNS, das die wechselnde öffentliche IP automatisch nachführt</li>
+            <li>Doppelte Firewall korrekt konfiguriert (Oracle Security List + iptables, persistent gespeichert)</li>
+            <li>Crash-Troubleshooting auf einer experimentellen ARM-Plattform, inkompatible Mods anhand der Server-Logs
+              identifiziert und gezielt entfernt</li>
+          </ul>
+        </div>
+
+        <h2 class="gallery-title">Galerie</h2>
+        <div class="gallery">
+          <a href="../img/projekte/minecraft-server/minecraft-1.webp" class="glightbox" data-gallery="minecraft">
+            <img src="../img/projekte/minecraft-server/minecraft-1.webp" alt="Backup-System läuft"
+              style="border-radius:16px; object-fit:cover; width:100%;">
+          </a>
+          <a href="../img/projekte/minecraft-server/minecraft-2.webp" class="glightbox" data-gallery="minecraft">
+            <img src="../img/projekte/minecraft-server/minecraft-2.webp" alt="Backup-System läuft"
+              style="border-radius:16px; object-fit:cover; width:100%;">
+          </a>
+          <a href="../img/projekte/minecraft-server/minecraft-3.webp" class="glightbox" data-gallery="minecraft">
+            <img src="../img/projekte/minecraft-server/minecraft-3.webp" alt="Multiplayer funktioniert"
+              style="border-radius:16px; object-fit:cover; width:100%;">
+          </a>
+          <a href="../img/projekte/minecraft-server/minecraft-4.webp" class="glightbox" data-gallery="minecraft">
+            <img src="../img/projekte/minecraft-server/minecraft-4.webp" alt="Modpack"
+              style="border-radius:16px; object-fit:cover; width:100%;">
+          </a>
+          <a href="../img/projekte/minecraft-server/minecraft-5.webp" class="glightbox" data-gallery="minecraft">
+            <img src="../img/projekte/minecraft-server/minecraft-5.webp" alt="Modpack"
+              style="border-radius:16px; object-fit:cover; width:100%;">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>&copy; 2026 Mario Taurok</span>
+      <a class="footer__link" href="../impressum">Impressum</a>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>

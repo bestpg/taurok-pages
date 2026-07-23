@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Impressum von Mario Taurok – Kontaktdaten und rechtliche Angaben.">
+    <title>Impressum · Mario Taurok</title>
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="container nav__inner">
+            <a class="nav__brand" href="index.html#start">Mario<span>.</span>Taurok</a>
+            <nav class="nav__links" aria-label="Hauptnavigation">
+                <a href="index.html#projekte">Projekte</a>
+                <a href="index.html#kontakt">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="proj-hero">
+            <div class="container">
+                <a class="backlink" href="index.html">&larr; Zurück zur Startseite</a>
+                <p class="kicker">Rechtliches</p>
+                <h1 class="proj-title">Impressum</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="prose">
+
+                    <h2>Diensteanbieter / Hosting:</h2>
+                    <p>
+                        Netsnek <br>
+                        Florian Kleber <br>
+                        netsnek.com <br>
+
+                    </p>
+
+                    <h2>Inhaltlich verantwortlich:</h2>
+                    <p>Mario Taurok<br>
+                        E-Mail: <a href="mailto:mario.taurok@proton.me">mario.taurok@proton.me</a>
+                        <!-- Adresse hier eintragen --></p>
+
+                    
+                    <h3>Inhalt der Website:</h3>
+                    <p>Diese Website dient der persönlichen Vorstellung und Bewerbung von Mario Taurok. </p>
+
+                    <h3>Haftungsauschluss </h3>
+                    <p>Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen. </p>
+
+                    <h3>Urheberrecht</h3>
+                    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
+                        österreichischem Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+                        Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des
+                        jeweiligen Autors bzw. Erstellers.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span>&copy; 2026 Mario Taurok</span>
+            <a class="footer__link" href="impressum">Impressum</a>
+        </div>
+    </footer>
+</body>
+
+</html>

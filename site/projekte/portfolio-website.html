@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio-Website taurok.com: Projekt von Mario Taurok.">
+  <title>Portfolio-Website taurok.com · Mario Taurok</title>
+  <link rel="stylesheet" href="../style.css?v=4">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="../index.html#start">Mario<span>.</span>Taurok</a>
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a href="../index.html#projekte">Projekte</a>
+        <a href="../index.html#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="proj-hero">
+      <div class="container">
+        <a class="backlink" href="../index.html#projekte">&larr; Zurück zum Portfolio</a>
+        <p class="kicker">Privat &middot; Projekt</p>
+        <h1 class="proj-title">Portfolio-Website taurok.com</h1>
+        <p class="proj-lead">Eigene Domain, mit dem KI-Agenten Claude gebaut und live veröffentlicht.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>Domain</li><li>Claude</li></ul>
+        <div class="proj-actions">
+          <a class="btn btn--primary" href="https://github.com/bestpg/portfolio-website" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" class="ico ico--fill" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>Auf GitHub ansehen</a>
+          <a class="btn btn--ghost" href="../index.html#projekte">Andere Projekte</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <figure class="proj-figure"><img src="../img/projekte/portfolio-website/web-view.webp" alt="Desktop-Ansicht der Portfolio-Website" loading="lazy"></figure>
+
+        <div class="prose">
+          <h2>Über das Projekt</h2>
+          <p>taurok.com ist meine eigene Portfolio-Website unter einer selbst registrierten Domain. Gebaut habe ich sie gemeinsam mit dem KI-Agenten Claude: Ich gebe Idee und Design vor und setze sie Schritt für Schritt mit der KI um.</p>
+          <p>Die Seite besteht aus reinem HTML und CSS und ist über die eigene Domain live im Internet veröffentlicht. Dabei habe ich praktisch gelernt, wie man eine Domain einrichtet, eine Website hostet und sie online bringt.</p>
+          <h2>Eckdaten</h2>
+          <ul>
+            <li>Eigene Domain: taurok.com</li>
+            <li>Gemeinsam mit dem KI-Agenten Claude gebaut</li>
+            <li>Reines HTML &amp; CSS, ohne Framework</li>
+            <li>Live im Internet veröffentlicht</li>
+          </ul>
+          <p>Für mich war taurok.com ein wichtiger Schritt, weil ich zum ersten Mal eine eigene Website komplett selbst online gebracht habe.</p>
+        </div>
+
+        <h2 class="gallery-title">Galerie</h2>
+        <div class="gallery">
+          <a href="../img/projekte/portfolio-website/web-view.webp" class="glightbox" data-gallery="portfolio">
+            <img src="../img/projekte/portfolio-website/web-view.webp" alt="Desktop-Ansicht der Portfolio-Website" loading="lazy">
+          </a>
+          <a href="../img/projekte/portfolio-website/mobile-view.webp" class="glightbox" data-gallery="portfolio">
+            <img src="../img/projekte/portfolio-website/mobile-view.webp" alt="Mobile-Ansicht der Portfolio-Website" loading="lazy">
+          </a>
+          <a href="../img/projekte/portfolio-website/cloudflare.webp" class="glightbox" data-gallery="portfolio">
+            <img src="../img/projekte/portfolio-website/cloudflare.webp" alt="Cloudflare-DNS-Konfiguration" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>&copy; 2026 Mario Taurok</span>
+      <a class="footer__link" href="../impressum">Impressum</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ touchNavigation: true, loop: true });
+  </script>
+</body>
+
+</html>

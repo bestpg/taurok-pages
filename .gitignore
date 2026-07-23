@@ -19,5 +19,17 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
+# Dev
+AGENTS.md
+
+# Root-level working copies (deployed from site/)
+/index.html
+/style.css
+/impressum
+/_headers
+/Mario-Taurok-Lebenslauf.pdf
+/img/
+/projekte/
+
 # Stray files left by the build sandbox (safe to delete)
 tmpchec
